@@ -19,9 +19,8 @@ pipeline {
         stage('tag Docker image to a repo') {
             steps {
             echo "taging docker image"
-                sh 'docker tag springboot:${BUILD_NUMBER} khadar/springboot:${BUILD_NUMBER}'
+                sh 'docker tag springboot:${BUILD_NUMBER} khadar3099/springboot:${BUILD_NUMBER}'
             }
           }
-		   }
+		}
     }
-    
